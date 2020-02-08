@@ -1,31 +1,55 @@
 @import '../../global/refs.scss';
 
 .navbar {
-    @include flex(space-between);
+    @include flex(space-between, center);
+    height: 55px;
+    box-shadow: rgb(222, 222, 222) 0 0 0 1px ;
     ul {
         list-style: none;
     }
+    .navbar-logo {
+        @include flex(center, center);
+    }
     .nav-image{
         padding-left: 50px;
+        height: 40px;
     }
     .navbar-social-network-container {
         position: relative;
         @include flex();
         width: 150px;
-        height: 50px;
+        height: 100%;
     }
     .navbar-social-network {
-        @include flex();
+        @include flex(space-around, center);
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
+        margin: 0;
+        padding: 0;
+        width: 100px;
     }
     .navbar-menu {
-        @include flex(space-between);
-        width: 35%;
+        @include flex(space-between, center);
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        li {
+            color: $title-purple;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.6rem;
+        }
     }
     .svg-image {
-        
+        //position: absolute;
+    }
+    .svg-extends {
+        width: 55px;
+        height: 100%;
+        background-color: $title-purple;
+        position: absolute;
+        right: 0;
     }
     .social-icon {
         height: 30px;
