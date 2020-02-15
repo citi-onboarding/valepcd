@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Navbar, AboutUs } from './components/index';
 
 function App() {
   return (
-    <section className="app" />
+    <section className="app">
+      <Navbar />
+      <AboutUs />
+    </section>
   );
 }
 

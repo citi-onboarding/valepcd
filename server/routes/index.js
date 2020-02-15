@@ -1,0 +1,20 @@
+const keystone = require('keystone');
+const path = require('path');
+
+const WhoWeAre = keystone.list('QuemSomos').model;
+
+module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+  });
+
+  app.get('/quem-somos', (req, res) => {
+    WhoWeAre.find().exec((err, data) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('DB Error');
+      }
+      res.status(200).send(data[0]);
+    });
+  });
+};
