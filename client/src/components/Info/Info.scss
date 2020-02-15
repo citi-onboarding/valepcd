@@ -1,0 +1,15 @@
+@import '../../global/refs.scss';
+
+.info-container {
+  @include flex(center, flex-start);
+  background-image: url('../../Assets/Backgrounds/contact-purple.svg');
+  background-repeat: no-repeat;
+  flex-direction: column;
+  width: 60%;
+  height: 30vw;
+
+  ul {
+    margin: 0 0 0 8%;
+    padding-bottom: 3%;
+  }
+}
