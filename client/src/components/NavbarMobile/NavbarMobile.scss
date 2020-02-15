@@ -1,0 +1,114 @@
+@import '../../global/refs.scss';
+
+.navbar-mobile {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    transform: translateX(100%);
+    display: none;
+
+    .navbar-mobile-button-close {
+        width: 100%;
+        @include flex(flex-end);
+
+        img {
+            width: 45px;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+    }
+    .navbar-logo-mobile {
+        width: 179px;
+
+        img {
+            @media(min-width: 800px) {
+                width: 300px;
+            }
+        }
+        @media(min-width: 800px) {
+            width: 300px;
+        }
+    }
+    .navbar-mobile-list {
+        list-style: none;
+        padding: 0;
+        width: 90%;
+        height: 50%;
+        @include flex(space-around, center, column);
+
+        .navbar-mobile-list-item {
+            height: 85px;
+            width: 300px;
+        }
+        .navbar-mobile-list-item-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            @include flex(center, center, column);
+        }
+        .navbar-mobile-item-image {
+            position: absolute;
+            @media(min-width: 800px) {
+                width: 400px;
+            }
+        }
+        .navbar-mobile-item-text {
+            position: absolute;
+            color: white;
+            font-family: 'Barlow', sans-serif;
+            font-size: 2rem;
+
+            @media(min-width: 800px) {
+                font-size: 2.3rem;
+            }
+        }
+        .navbar-mobile-item-text-container {
+            height: 100%;
+            width: 100%;
+            @include flex(cc);
+        }
+    }
+    .navbar-mobile-footer {
+        width: 100%;
+        height: 105px;
+
+        @media(min-height: 1000px) {
+            height: 200px;
+        }
+    }
+}
+
+.closeNavbar {
+    @include flex(space-between, center, column);
+    animation-name: closeNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.openNavbar {
+    @include flex(space-between, center, column);
+    animation-name: openNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openNav {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes closeNav {
+    0% {
+        transform: translateX(0%)
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
