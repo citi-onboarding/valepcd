@@ -2,11 +2,18 @@
 
 .info-container {
   @include flex(center, flex-start);
+  position: absolute;
+  left: 0;
+  opacity: 1;
   background-image: url('../../Assets/Backgrounds/contact-purple.svg');
+  background-size: 100%;
   background-repeat: no-repeat;
   flex-direction: column;
   width: 60%;
-  height: 30vw;
+  height: 600px;
+  @media only screen and (max-width: 1400px) {
+    height: 500px;
+  }
 
   ul {
     margin: 0 0 0 8%;
