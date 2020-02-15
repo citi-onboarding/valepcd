@@ -3,7 +3,7 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 // First we create the WhoWeAre list.
-const WhoWeAre = new keystone.List('O que é o vale PCD');
+const WhoWeAre = new keystone.List('QuemSomos');
 
 // Then we are going to add the fields to our list.
 WhoWeAre.add({
