@@ -1,0 +1,24 @@
+@import '../../global/refs.scss';
+
+li {
+  width: 100%;
+  @include flex(flex-start, center);
+  list-style-type: none;
+
+  a {
+    @include flex(flex-start, center);
+    text-decoration: none;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: white;
+      margin: 15px 0;
+    }
+  }
+};
