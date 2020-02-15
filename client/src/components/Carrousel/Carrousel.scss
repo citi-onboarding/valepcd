@@ -1,0 +1,26 @@
+@import '../../global/refs.scss';
+
+.carrousel-container {
+  width: 500px;
+  margin-left: 50px;;
+  img{
+    width: 250px;
+  }
+  li.slick-active button:before {
+    color: #86007D;
+  }
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+  .carrousel-item-container {
+    display: flex !important;
+    @include flex(center, center, column);
+  }
+  .slick-prev, .slick-next {
+    height: 40px;
+  }
+  #carrousel-image {
+    z-index: 1;
+  }
+}
+
