@@ -32,8 +32,8 @@ function NavbarMobile() {
             <li className="navbar-mobile-list-item">
                 <div className="navbar-mobile-list-item-container">
                 <img className="navbar-mobile-item-image" src={CurveItemNav1Svg} alt="" />
-                <div className="navbar-mobile-item-text-container">
-                    <a className="navbar-mobile-item-text" href="">O que é o vale</a>
+                <div className="navbar-mobile-item-text-container navbar-mobile-item-text-container-padding">
+                    <a className="navbar-mobile-item-text " href="">O que é o Vale</a>
                 </div>
                 </div>
             </li>

@@ -18,9 +18,9 @@ function NavbarWeb() {
         <img className="nav-image" src={Logotipo} alt="" tabIndex="1" />
       </div>
       <ul className="navbar-menu">
-        <li tabIndex="2">Quem somos?</li>
-        <li tabIndex="3">Relatos</li>
-        <li tabIndex="4">Contatos</li>
+        <li tabIndex="2"><a href="">Quem somos?</a></li>
+        <li tabIndex="3"><a href="">Relatos</a></li>
+        <li tabIndex="4"><a href="">Contatos</a></li>
       </ul>
       <div className="navbar-social-network-container">
         <img className="svg-image" src={SocialNetworkSvg} alt="" />
