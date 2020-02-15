@@ -4,26 +4,26 @@ import axiosPost from '../../global/func';
 import './Form.scss';
 
 function Form() {
-  const [inputName, setInputName] = useState('');
-  const [inputEmail, setInputEmail] = useState('');
-  const [inputSubject, setInputSubject] = useState('');
-  const [inputText, setInputText] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [text, setText] = useState('');
 
   const handleSubmit = () => {
     axiosPost('/api/sendEmail', {
-      name: inputName,
-      email: inputEmail,
-      subject: inputSubject,
-      text: inputText,
+      name: name,
+      email: email,
+      subject: subject,
+      text: text,
     }, (res) => { console.log(res.data); });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <Field value={inputName} label="Nome:" type="text" handleChange={setInputName} />
-      <Field value={inputEmail} label="E-mail:" type="email" handleChange={setInputEmail} />
-      <Field value={inputSubject} label="Assunto:" type="text" handleChange={setInputSubject} />
-      <Field value={inputText} label="Digite aqui seu texto:" type="text" handleChange={setInputText} />
+      <Field value={name} label="Nome:" type="text" handleChange={setName} />
+      <Field value={email} label="E-mail:" type="email" handleChange={setEmail} />
+      <Field value={subject} label="Assunto:" type="text" handleChange={setSubject} />
+      <Field value={text} label="Digite aqui seu texto:" type="text" handleChange={setText} />
       <button type="submit">Enviar</button>
     </form>
   );
