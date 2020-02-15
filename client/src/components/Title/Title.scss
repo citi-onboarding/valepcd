@@ -1,9 +1,10 @@
 @import '../../global/refs.scss';
 
 .title {
-  @include flex();
+  @include flex(cc);
   color: $title-purple;
-  font-size: 1.4rem;
+  margin-top: 60px;
+  font-size: 2.4rem;
 
   img {
     margin: 7px;
