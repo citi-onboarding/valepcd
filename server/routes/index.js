@@ -1,9 +1,12 @@
 const keystone = require('keystone');
 const path = require('path');
+const cors = require('cors');
 
 const WhoWeAre = keystone.list('QuemSomos').model;
 
 module.exports = (app) => {
+  app.use(cors());
+
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
   });
