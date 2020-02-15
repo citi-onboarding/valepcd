@@ -1,13 +1,21 @@
 @import '../../global/refs.scss';
 
 .container-form {
-	width: 900px;
-	height: 650px;
-	background-image: url('../../Assets/Backgrounds/form.svg');
-	background-repeat: no-repeat;
+  @include flex(cc);
+  opacity: 0.9;
+  width: 70%;
+  height: 850px;
+  background-image: url('../../Assets/Backgrounds/form.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 1400px) {
+    height: 700px;
+  }
 	form {
-		@include flex(center,center,column);
-		padding-top: 100px;
+    padding-top: 10%;
+    padding-left: 5%;
+
+    @include flex(center,center,column);
 		.send-button {
 			background: transparent;
 			width: 130px;
@@ -20,7 +28,7 @@
 			box-shadow: 0px 3px 6px #00000029;
 			border: 2px solid #FFFFFF;
 			border-radius: 40px;
-			margin-top: 30px;
+			margin-top: 20px;
 		}
 	}
 }
