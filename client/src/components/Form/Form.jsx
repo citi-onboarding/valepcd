@@ -3,6 +3,7 @@ import Field from '../Field';
 import axiosPost from '../../global/func';
 import './Form.scss';
 
+
 function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -19,13 +20,15 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <Field value={name} label="Nome:" type="text" handleChange={setName} />
-      <Field value={email} label="E-mail:" type="email" handleChange={setEmail} />
-      <Field value={subject} label="Assunto:" type="text" handleChange={setSubject} />
-      <Field value={text} label="Digite aqui seu texto:" type="text" handleChange={setText} />
-      <button type="submit">Enviar</button>
-    </form>
+    <div className="container-form">
+      <form onSubmit={handleSubmit}>
+        <Field className='input'  value={name} label="Nome:" type="text" handleChange={setName} />
+        <Field className='input' value={email} label="E-mail:" type="email" handleChange={setEmail} />
+        <Field className='input' value={subject} label="Assunto:" type="text" handleChange={setSubject} />
+        <Field className='field-text' value={text} label="Digite aqui seu texto:" type="text" handleChange={setText} />
+        <button className="send-button" type="submit">Enviar</button>
+      </form>
+    </div>
   );
 }
 
