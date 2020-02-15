@@ -1,10 +1,11 @@
-#valleyImage {
-	clip-path: url(#mask);
-	position: absolute;
-	left: 0;
-	border: 1px solid red;
-}
+#aboutUsImg {
+  position: relative;
+  width: 100vw;
 
-#Componente_3_1 {
-	fill: url('../../assets/component.png');
+  #Componente_3_1 {
+    left: 0;
+    top: 30%;
+    position: absolute;
+  }
+
 }

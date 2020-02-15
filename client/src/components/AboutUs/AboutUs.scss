@@ -1,4 +1,78 @@
-#aboutUs {
+@import "../../global/refs.scss";
+
+#about-us {
   display: flex;
+  position: relative;
   justify-content: flex-start;
+
+  &-image {
+    display: flex;
+    width: 40%;
+  }
+
+  &-content {
+    display: flex;
+    position: absolute;
+    width: inherit;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 9%;
+    margin-left: 37%;
+
+    z-index: 2;
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.3em;
+      width: 70%;
+    }
+
+  }
+
+  .about-us-subtitle {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .quote-img {
+    left: -40px;
+    top: -7px;
+  }
+
+  .quote-img-rotate {
+    transform: rotate(180deg);
+    bottom: 12%;
+    right: -25px;
+  }
+
+  .quote-img, .quote-img-rotate {
+    position: absolute;
+    opacity: 0.32;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1024px) {
+  #about-us {
+    flex-direction: column;
+    border: 1px solid blue;
+    width: 100vw;
+
+    &-image {
+      display: block;
+      width: fit-content;
+      border: 1px solid red;
+    }
+
+    &-content {
+      display: block;
+      width: 100vw;
+      border: 1px solid blueviolet;
+    }
+  }
 }
