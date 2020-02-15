@@ -1,16 +1,15 @@
 import React from 'react';
 import './AboutUsImg.scss';
 import { ReactComponent as BackgroundSVG } from '../../assets/Caminho 84.svg';
-import valeImage from '../../assets/component.png';
 
-function AboutUsImg() {
+function AboutUsImg({ image }) {
   return (
     <div id="aboutUsImg">
       <BackgroundSVG />
       <svg id="Componente_3_1" data-name="Componente 3 – 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 888.15 842.56">
         <defs>
           <pattern id="img1" patternUnits="userSpaceOnUse" width="1000" height="1000">
-            <image href={valeImage} x="-100" y="0" width="1000" height="1000" />
+            <image href={image} x="-100" y="0" width="1000" height="1000" />
           </pattern>
         </defs>
         <g id="Caminho_180" transform="matrix(0.829, -0.559, 0.559, 0.829, -152.182, 235.418)" data-name="Caminho 180" fill="url(#img1)" opacity="1">
