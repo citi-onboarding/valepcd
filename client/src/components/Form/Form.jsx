@@ -12,7 +12,7 @@ function Form({ onClickArrow, className }) {
   const [text, setText] = useState('');
 
   const handleSubmit = () => {
-    axiosPost('/api/sendEmail', {
+    axiosPost('/api/sendmail', {
       name,
       email,
       subject,
