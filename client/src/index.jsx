@@ -7,11 +7,13 @@ function App() {
   const [state, setState] = useState(false);
   return (
     <section className="app">
-      <Title title="Fale conosco!" />
-      <div className="teste">
-        <Info onClickArrow={() => { setState(!state); }} className={state} />
-        <Form onClickArrow={() => { setState(!state); }} className={!state} />
-      </div>
+      <section className="contact">
+        <Title title="Fale conosco!" />
+        <div className="teste">
+          <Info onClickArrow={() => { setState(!state); }} className={state} />
+          <Form onClickArrow={() => { setState(!state); }} className={!state} />
+        </div>
+      </section>
     </section>
   );
 }
