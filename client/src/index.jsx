@@ -10,7 +10,6 @@ function App() {
       <Navbar />
       <Banner />
       <AboutUs />
-      <Title title="Fale conosco!" />
       <section className="contact">
         <Title title="Fale conosco!" />
         <div className="teste">
