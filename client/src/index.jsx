@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Navbar, AboutUs, Banner } from './components/index';
-import { Form, Info, Title } from './components';
-import './App.scss';
+import { Navbar, AboutUs, Form, Info, Title } from './components';
 
 function App() {
   const [state, setState] = useState(false);
