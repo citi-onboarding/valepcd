@@ -3,7 +3,9 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 // First we create the testimonies list.
-const testimonies = new keystone.List('Relatos');
+const testimonies = new keystone.List('Relatos', {
+  map: { name: 'name' }
+});
 
 // Then we are going to add the fields to our list.
 testimonies.add({
