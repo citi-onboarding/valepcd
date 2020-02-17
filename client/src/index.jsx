@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Form, Info, Title } from './components';
+import { Navbar, AboutUs, Form, Info, Title } from './components';
 import './App.scss';
 
 function App() {
   const [state, setState] = useState(false);
   return (
     <section className="app">
+      <Navbar />
+      <AboutUs />
       <section className="contact">
         <Title title="Fale conosco!" />
         <div className="teste">

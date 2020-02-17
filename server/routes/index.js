@@ -6,7 +6,8 @@ const nodemailer = require('nodemailer');
 const WhoWeAre = keystone.list('QuemSomos').model;
 
 module.exports = (app) => {
-  app.use(cors())
+  app.use(cors());
+
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
   });
@@ -22,7 +23,6 @@ module.exports = (app) => {
   });
 
   // Send Mail
-  
 	app.post('/sendmail', (req, res) => {
     const {
       name,
@@ -32,7 +32,6 @@ module.exports = (app) => {
     } = JSON.stringify(req.body);
 
     // console.log(body)
-    
     const transporter = nodemailer.createTransport({
       service: "gmail",
       port: 587,

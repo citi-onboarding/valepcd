@@ -1,0 +1,88 @@
+@import '../../global/refs.scss';
+
+.navbar-web {
+    @include flex(space-between, center);
+    height: 55px;
+    box-shadow: rgb(222, 222, 222) 0 0 0 1px ;
+    ul {
+        list-style: none;
+    }
+    .navbar-logo {
+        @include flex(cc);
+    }
+    .nav-image{
+        padding-left: 50px;
+        height: 40px;
+        @media(max-width: 1024px) {
+            padding-left: 25px;
+        }
+    }
+    .navbar-social-network-container {
+        position: relative;
+        @include flex();
+        width: 150px;
+        height: 100%;
+        @media(max-width: 1024px) {
+            width: 100px;
+        }
+        .button-hamburguer-container {
+            height: 100%;
+            @include flex(cc);
+        }
+        .button-hamburguer {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding-right: 10px;
+            @media(max-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+    .navbar-social-network {
+        @include flex(space-around, center);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+
+        @media(max-width: 1024px) {
+            display: none;
+        }
+    }
+    .navbar-menu {
+        @include flex(space-between, center);
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        @media(max-width: 1024px) {
+            display: none;
+        }
+        li a{
+            color: $title-purple;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+    }
+    .svg-image {
+        //position: absolute;
+    }
+    .svg-extends {
+        width: 55px;
+        height: 100%;
+        background-color: $title-purple;
+        position: absolute;
+        right: 0;
+        @media(max-width: 1024px) {
+            display: none;
+        }
+    }
+    .social-icon {
+        height: 30px;
+        width: 30px;
+    }
+}

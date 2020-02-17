@@ -5,17 +5,20 @@ const path = require('path');
 require('dotenv').config();
 
 keystone.init({
-  name: 'Keystone ToDo List',
+  name: 'Vale PCD',
   static: [path.join(__dirname, './public')],
   'admin path': 'admin',
   port: process.env.PORT || 3001,
   'auto update': true,
-  mongo: 'mongodb://localhost/keystonetodo2',
+  mongo: process.env.MONGO_URI,
   auth: true,
   'user model': 'User',
-  'cookie secret': '6D61822FBEAED8635A4A52241FEC3',
+  'cookie secret': process.env.COOKIE_SECRET,
+  'cloudinary config': process.env.CLOUDINARY_CONFIG,
 });
 
 keystone.import('./models');
+
+keystone.set('routes', require('./routes'));
 
 keystone.start();
