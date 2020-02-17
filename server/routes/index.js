@@ -45,10 +45,10 @@ module.exports = (app) => {
     })
 
     const mailOptions = {
-      from: `"${nome}" <${email}>`,
+      from: `"${name}" <${email}>`,
       // to: Put a email,
       subject: assunto,
-      text: `${nome} <${email}> <${telefone}>\n\n${mensagem}`
+      text: `${nome} <${email}>\n <${subject}> \n\n${mensage}`
     }
 
     transporter.sendMail(mailOptions, (error) => {
