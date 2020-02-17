@@ -9,7 +9,6 @@ function App() {
     <section className="app">
       <Navbar />
       <AboutUs />
-      <Title title="Fale conosco!" />
       <section className="contact">
         <Title title="Fale conosco!" />
         <div className="teste">
