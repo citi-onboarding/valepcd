@@ -1,6 +1,10 @@
 const keystone = require('keystone');
 const path = require('path');
+<<<<<<< HEAD
 const cors = require('cors');
+=======
+const cors = require('cors')
+>>>>>>> Bugfix(contact): rebase index.js (server)
 const nodemailer = require('nodemailer');
 
 const WhoWeAre = keystone.list('QuemSomos').model;
@@ -23,7 +27,11 @@ module.exports = (app) => {
   });
 
   // Send Mail
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> Bugfix(contact): rebase index.js (server)
 	app.post('/sendmail', (req, res) => {
     const {
       name,
@@ -33,7 +41,11 @@ module.exports = (app) => {
     } = JSON.stringify(req.body);
 
     // console.log(body)
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> Bugfix(contact): rebase index.js (server)
     const transporter = nodemailer.createTransport({
       service: "gmail",
       port: 587,
@@ -46,10 +58,17 @@ module.exports = (app) => {
     })
 
     const mailOptions = {
+<<<<<<< HEAD
       from: `"${name}" <${email}>`,
       // to: Put a email,
       subject: assunto,
       text: `${nome} <${email}>\n <${subject}> \n\n${mensage}`
+=======
+      from: `"${nome}" <${email}>`,
+      // to: Put a email,
+      subject: assunto,
+      text: `${nome} <${email}> <${telefone}>\n\n${mensagem}`
+>>>>>>> Bugfix(contact): rebase index.js (server)
     }
 
     transporter.sendMail(mailOptions, (error) => {
