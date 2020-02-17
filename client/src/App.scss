@@ -1,0 +1,11 @@
+@import './global/refs.scss';
+
+.app {
+  height: 100vh;
+  @include flex(space-between);
+  flex-direction: column;
+  .teste {
+    position: relative;
+    @include flex(flex-end, flex-end, row);
+  }
+}

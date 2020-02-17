@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Navbar, AboutUs, Form, Info, Title } from './components';
+import './App.scss';
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
       <AboutUs />
       <Title title="Fale conosco!" />
       <div className="teste">
-        <Form />
         <Info />
+        <Form />
       </div>
     </section>
   );
