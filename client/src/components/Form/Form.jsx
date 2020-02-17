@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Field from '../Field';
-import axiosPost from '../../global/func';
+import { axiosPost } from '../../global/func';
 import Arrow from '../../Assets/Backgrounds/right-chevron.svg';
 import './Form.scss';
 
@@ -11,13 +11,19 @@ function Form({ onClickArrow, className }) {
   const [subject, setSubject] = useState('');
   const [text, setText] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+ 
     axiosPost('/api/sendmail', {
       name,
       email,
       subject,
       text,
     }, (res) => { console.log(res.data); });
+    setName('');
+    setEmail('');
+    setSubject('');
+    setText('');
   };
 
   return (

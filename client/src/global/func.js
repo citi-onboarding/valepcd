@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+const baseUrl = 'http://localhost:3001';
+
 const axiosGet = async (relativeUrl = '/', setState = () => { }) => {
   try {
-    const res = await axios.get(`http://localhost:3001${relativeUrl}`);
+    const res = await axios.get(`${baseUrl}${relativeUrl}`);
     await setState(res.data);
     return res;
   } catch (err) {
@@ -10,17 +12,16 @@ const axiosGet = async (relativeUrl = '/', setState = () => { }) => {
   }
 };
 
-export {
-  axiosGet,
-};
-const baseUrl = 'http://localhost:3001';
-const axiosPost = async (relativeurl = '/', body={ }, callback = () => { }) => {
+const axiosPost = async (relativeUrl = '/', body={ }, callback = () => { }) => {
   try {
-    const res = await axios.post(`${baseUrl}${relativeurl}`, body);
+    const res = await axios.post(`${baseUrl}${relativeUrl}`, body);
     callback(res);
   } catch (err) {
     console.log(err);
   }
 };
 
-export default axiosPost;
+export {
+  axiosGet,
+  axiosPost,
+};

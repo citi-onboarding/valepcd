@@ -23,38 +23,37 @@ module.exports = (app) => {
   });
 
   // Send Mail
-	app.post('/sendmail', (req, res) => {
+	app.post('/api/sendmail', (req, res) => {
     const {
       name,
       email,
       subject,
-      mensage,
-    } = JSON.stringify(req.body);
+      text,
+    } = req.body;
 
-    // console.log(body)
     const transporter = nodemailer.createTransport({
       service: "gmail",
       port: 587,
       secure: false,
       auth: {
-        user: "valedopcd@gmail.com",
-        pass: "valedopcd123"
+        user: process.env.TRANSPORTER_EMAIL,
+        pass: process.env.TRANSPORTER_PASSWORD,
       },
-      tls: { rejectUnauthorized: false }
-    })
+      tls: { rejectUnauthorized: false },
+    });
 
     const mailOptions = {
       from: `"${name}" <${email}>`,
-      // to: Put a email,
-      subject: assunto,
-      text: `${nome} <${email}>\n <${subject}> \n\n${mensage}`
-    }
+      to: 'valedopcd@gmail.com',
+      subject,
+      text: `\n ${subject} \n\n${text}`,
+    };
 
     transporter.sendMail(mailOptions, (error) => {
       if (error) {
-        console.log(error)
+        res.status(500).send(error);
       } else {
-        console.log('Email enviado');
+        res.status(200).send('Email enviado');
       }
     })
 	})
