@@ -13,8 +13,8 @@ function Field({
       <label htmlFor={label}>
         <p>{label}</p>
         {className === 'input field-text'
-          ? <textarea value={value} type={type} id={label} onChange={handleInput} className={className} autoComplete="off" />
-          : <input value={value} type={type} id={label} onChange={handleInput} className={className} autoComplete="off" />}
+          ? <textarea value={value} type={type} id={label} onChange={handleInput} className={className} autoComplete="off" required />
+          : <input value={value} type={type} id={label} onChange={handleInput} className={className} autoComplete="off" required />}
       </label>
     </div>
   );
