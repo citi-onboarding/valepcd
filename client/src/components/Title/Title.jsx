@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Title.scss';
-import LeftWing from '../../Assets/left butterfly wing.svg';
-import RightWing from '../../Assets/right butterfly wing.svg';
+import LeftWing from '../../Assets/Contact/left butterfly wing.svg';
+import RightWing from '../../Assets/Contact/right butterfly wing.svg';
 
 function Title({ title }) {
   return (
