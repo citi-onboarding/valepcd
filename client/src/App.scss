@@ -3,7 +3,8 @@
 .contact {
   @include flex(space-between);
   flex-direction: column;
-  .teste {
+
+  .contact-container {
     position: relative;
     @include flex(flex-end, flex-end, row);
   }

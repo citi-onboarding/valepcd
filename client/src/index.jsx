@@ -11,9 +11,9 @@ function App() {
       <AboutUs />
       <section className="contact">
         <Title title="Fale conosco!" />
-        <div className="teste">
-          <Info onClickArrow={() => { setState(!state); }} className={state} />
-          <Form onClickArrow={() => { setState(!state); }} className={!state} />
+        <div className="contact-container">
+          <Info onClickArrow={() => setState(!state)} className={state} />
+          <Form onClickArrow={() => setState(!state)} className={!state} />
         </div>
       </section>
     </section>
