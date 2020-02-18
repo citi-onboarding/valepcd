@@ -17,7 +17,7 @@
     position: absolute;
     right: 0;
     background: transparent;
-    padding: 30px;
+    padding: 20px;
     border: none;
     display: none;
   }
@@ -67,10 +67,8 @@
       @include flex(center, center);
       background-image: url('../../Assets/Backgrounds/form-mobile.svg');
       width: 100%;
-      min-height: 70vh;
+      height: 70vh;
+      min-height: 500px;
     }
-  }
-  @media only screen and (max-width: 600px) {
-      height: 30vh;
   }
 }
