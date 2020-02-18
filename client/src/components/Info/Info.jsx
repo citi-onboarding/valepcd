@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import InfoContainer from '../InfoContainer';
-import Phone from '../../Assets/call branco.svg';
-import Insta from '../../Assets/insta branco.svg';
-import Facebook from '../../Assets/facebook branco.svg';
-import Envelope from '../../Assets/envelope branco.svg';
-import Arrow from '../../Assets/Backgrounds/right-chevron.svg';
+import Phone from '../../Assets/Contact/call branco.svg';
+import Insta from '../../Assets/Contact/insta branco.svg';
+import Facebook from '../../Assets/Contact/facebook branco.svg';
+import Envelope from '../../Assets/Contact/envelope branco.svg';
+import Arrow from '../../Assets/Contact/right-chevron.svg';
 import './Info.scss';
 
 function Info({ onClickArrow, className }) {
