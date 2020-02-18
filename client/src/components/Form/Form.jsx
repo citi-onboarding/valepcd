@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Field from '../Field';
 import { axiosPost } from '../../global/func';
-import Arrow from '../../Assets/Backgrounds/right-chevron.svg';
+import Arrow from '../../Assets/Contact/right-chevron.svg';
 import './Form.scss';
 
 function Form({ onClickArrow, className }) {
