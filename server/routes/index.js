@@ -23,7 +23,7 @@ module.exports = (app) => {
   });
 
 // Send Mail
-app.post('/api/sendmail', (req, res) => {
+  app.post('/api/sendmail', (req, res) => {
   const {
     name,
     email,
