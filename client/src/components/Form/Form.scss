@@ -2,6 +2,7 @@
 
 .container-form {
   @include flex(cc);
+  position: relative;
   opacity: 0.9;
   width: 70%;
   height: 850px;
@@ -13,7 +14,7 @@
   }
 
   .arrow-button {
-    position: fixed;
+    position: absolute;
     right: 0;
     background: transparent;
     padding: 30px;

@@ -13,7 +13,6 @@ function Form({ onClickArrow, className }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
- 
     axiosPost('/api/sendmail', {
       name,
       email,
