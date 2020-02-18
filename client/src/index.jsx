@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Navbar, AboutUs, Form, Info, Title } from './components';
+import { Navbar, AboutUs, Contact } from './components';
 import './App.scss';
 
 function App() {
@@ -9,13 +9,7 @@ function App() {
     <section className="app">
       <Navbar />
       <AboutUs />
-      <section className="contact">
-        <Title title="Fale conosco!" />
-        <div className="contact-container">
-          <Info onClickArrow={() => setState(!state)} className={state} />
-          <Form onClickArrow={() => setState(!state)} className={!state} />
-        </div>
-      </section>
+      <Contact />
     </section>
   );
 }
