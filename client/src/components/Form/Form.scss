@@ -1,0 +1,97 @@
+@import '../../global/refs.scss';
+
+.container-form {
+  @include flex(cc);
+  position: relative;
+  opacity: 0.9;
+  width: 70%;
+  height: 850px;
+  background-image: url('../../Assets/Backgrounds/form.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 1400px) {
+    height: 700px;
+  }
+
+  .arrow-button {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    margin-right: 30px;
+    border: none;
+    display: none;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 10px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+	form {
+    font-family: 'Barlow', sans-serif;
+    margin: 60px 0 0 5vw;
+    @include flex(center,center,column);
+
+		.send-button {
+			background: transparent;
+			width: 140px;
+			height: 55px;
+			text-align: center;
+			font-size: 1.3rem;
+			color: white;
+			text-shadow: 0px 3px 6px #00000029;
+			box-shadow: 0px 3px 6px #00000029;
+			border: 2px solid #FFFFFF;
+			border-radius: 40px;
+      margin-top: 20px;
+      cursor: pointer;
+
+      @media only screen and (max-width: 1024px) {
+        width: 120px;
+        height: 50px;
+        font-size: 1.1rem;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 20px;
+    }
+  }
+
+  &.false {
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &.true {
+    @media only screen and (max-width: 1024px) {
+      @include flex(center, center);
+      background-image: url('../../Assets/Backgrounds/form-mobile.svg');
+      width: 100%;
+      height: 70vh;
+      min-height: 620px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      min-height: 480px;
+    }
+  }
+}

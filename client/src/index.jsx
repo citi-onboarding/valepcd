@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './App.scss';
 import {
   Navbar,
   AboutUs,
   Carrousel,
   Banner,
-} from './components/index';
-
+  Contact,
+} from './components';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Banner />
       <AboutUs />
       <Carrousel />
+      <Contact />
     </section>
   );
 }

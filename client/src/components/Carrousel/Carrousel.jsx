@@ -14,6 +14,7 @@ import Caminho63Svg from '../../assets/Caminho63.svg';
 import Caminho8Svg from '../../assets/Grupo_8.svg';
 import Caminho81Svg from '../../assets/Grupo_8-1.svg';
 import { axiosGet } from '../../global/func';
+import Title from '../Title';
 
 function Carrousel() {
   const [res, setRes] = useState(null);
@@ -36,9 +37,7 @@ function Carrousel() {
   return (
     <section className="carrousel-section-container">
       <div className="container-title">
-        <img className="image-title" src={Caminho8Svg} alt="" />
-        <h1 className="titulo">Relatos</h1>
-        <img className="image-title" src={Caminho81Svg} alt="" />
+        <Title title="Relatos" />
       </div>
       <img className="carrousel-svg-79" src={Caminho79Svg} alt="" />
       <img className="carrousel-svg-80" src={Caminho80Svg} alt="" />

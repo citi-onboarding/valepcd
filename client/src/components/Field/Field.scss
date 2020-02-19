@@ -1,0 +1,47 @@
+@import '../../global/refs.scss';
+
+.field label{
+  .input {
+    background: transparent;
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1.5px solid #FFFFFF;
+    font-size: 1.2rem;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 15px;
+    opacity: 1;
+    width: 350px;
+    height: 35px;
+
+    &.field-text {
+      padding: 4px 15px;
+      height: 130px;
+    }
+  }
+
+  p {
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    margin: 7px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .input {
+      width: 180px;
+      height: 25px;
+      font-size: 1rem;
+
+      &.field-text {
+        height: 80px;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}

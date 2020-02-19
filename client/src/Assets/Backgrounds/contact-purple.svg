@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   preserveAspectRatio="none"
+   viewBox="0 0 1207.947 790.171"
+   version="1.1"
+   id="svg518"
+   sodipodi:docname="Caminho 66.svg"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
+  <metadata
+     id="metadata522">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1016"
+     id="namedview520"
+     showgrid="false"
+     inkscape:zoom="0.29866952"
+     inkscape:cx="781.41542"
+     inkscape:cy="274.43723"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg518" />
+  <defs
+     id="defs514">
+    <style
+       id="style507">.a{opacity:0.978;fill:url(#a);}</style>
+    <linearGradient
+       id="a"
+       x1="419.37488"
+       x2="419.37488"
+       y2="821.90888"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2364124,0,0,0.8087916,86.636761,126.60176)"
+       y1="-155.06881">
+      <stop
+         offset="0"
+         stop-color="#2929f4"
+         id="stop509" />
+      <stop
+         offset="1"
+         stop-color="#dd26d0"
+         id="stop511" />
+    </linearGradient>
+  </defs>
+  <path
+     class="a"
+     d="m 1.2827612,17.163761 c 88.1509998,-50.517 244.1999988,33.6 417.0709988,47.95 244.515,20.3 445.574,-19.818 491.731,178.240999 46.157,198.059 138.91604,420.462 299.04604,548 -17.962,0 -1051.18904,-1.063 -1207.5000388,-1.063 -0.004,-23.39 -0.7,-721.821999 -0.348,-773.127999 z"
+     id="path516"
+     style="opacity:0.978;fill:url(#a)"
+     inkscape:connector-curvature="0" />
+</svg>
