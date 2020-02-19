@@ -46,7 +46,7 @@ module.exports = (app) => {
     from: `"${name}" <${email}>`,
     to: 'valedopcd@gmail.com',
     subject,
-    text: `\n ${subject} \n\n${text}`,
+    text: `${name} <${email}> \n\n${text}`
   };
 
   transporter.sendMail(mailOptions, (error) => {
