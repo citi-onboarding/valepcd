@@ -19,10 +19,8 @@ function Carrousel() {
   const [res, setRes] = useState(null);
 
   useEffect(() => {
-    axiosGet("/quem-somos", setRes);
+    axiosGet('/relatos', setRes);
   }, []);
-
-  const { image, text, name, end } = res || {};
 
   const settings = {
     dots: true,
@@ -33,6 +31,8 @@ function Carrousel() {
     nextArrow: <img id="carrousel-image" src={NexvArrowSvg} alt="" />,
     prevArrow: <img id="carrousel-image" src={PrevArrowSvg} alt="" />,
   };
+  console.log('aqui');
+  res && console.log(res[0]);
   return (
     <section className="carrousel-section-container">
       <div className="container-title">
@@ -46,46 +46,19 @@ function Carrousel() {
       <img className="carrousel-svg-63" src={Caminho63Svg} alt="" />
       <div className="carrousel-container">
         <Slider {...settings}>
-          <div className="carrousel-item-container">
-            <img className="carrousel-image-item" src={ImagemCarrousel} alt="" />
-            <div className="carrousel-text-container">
-              <img className="quote-img-rotate" src={QuotesSvg} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Nihil omnis expedita
-                facere dignissimos ut nemo. Ab consequuntur
-                ullam sit eaque ex nesciunt, natus adipisci,
-              </p>
-              <h3>nome</h3>
-              <h5>descrição</h5>
+          { res && res[0].image && res[0].image[0].url && res.map((slid) => (
+            <div className="carrousel-item-container">
+              <img className="carrousel-image-item" src={slid.image[0].url} alt="" />
+              <div className="carrousel-text-container">
+                <img className="quote-img-rotate" src={QuotesSvg} alt="" />
+                <p>
+                  {slid.text}
+                </p>
+                <h3>{slid.name}</h3>
+                <h5>{slid.about}</h5>
+              </div>
             </div>
-          </div>
-          <div className="carrousel-item-container">
-            <img className="carrousel-image-item" src="https://osegredo.com.br/wp-content/uploads/2018/02/as-pessoas-de-cora%C3%A7%C3%B5es-de-ouro-830x450.jpg" alt="" />
-            <div className="carrousel-text-container">
-              <img className="quote-img-rotate" src={QuotesSvg} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Nihil omnis expedita
-                facere dignissimos ut nemo. Ab consequuntur
-                ullam sit eaque ex nesciunt, natus adipisci,
-              </p>
-              <h3>nome</h3>
-              <h5>descrição</h5>
-            </div>
-          </div>
-          <div className="carrousel-item-container">
-            <img className="carrousel-image-item" src="https://osegredo.com.br/wp-content/uploads/2018/02/pessoas-que-superam-a-depress%C3%A3o-830x450.jpg" alt="" />
-            <div className="carrousel-text-container">
-              <img className="quote-img-rotate" src={QuotesSvg} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Nihil omnis expedita
-              </p>
-              <h3>nome</h3>
-              <h5>descrição</h5>
-            </div>
-          </div>
+          ))}
         </Slider>
       </div>
     </section>

@@ -3,6 +3,7 @@ const path = require('path');
 const cors = require('cors');
 
 const WhoWeAre = keystone.list('QuemSomos').model;
+const Testimies = keystone.list('Relatos').model;
 
 module.exports = (app) => {
   app.use(cors());
@@ -20,4 +21,15 @@ module.exports = (app) => {
       res.status(200).send(data[0]);
     });
   });
+
+  app.get('/relatos', (req, res) => {
+    Testimies.find().exec((err, data) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('DB Error');
+      }
+      res.status(200).send(data);
+    });
+  });
+
 };
