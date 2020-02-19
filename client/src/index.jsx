@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Banner />
       <AboutUs />
-      <Contact />
       <Carrousel />
+      <Contact />
     </section>
   );
 }
