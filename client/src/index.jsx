@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { Navbar, Banner, AboutUs, Contact } from './components';
 import './App.scss';
+import {
+  Navbar,
+  AboutUs,
+  Carrousel,
+  Banner,
+  Contact,
+} from './components';
 
 function App() {
-  const [state, setState] = useState(false);
   return (
     <section className="app">
       <Navbar />
       <Banner />
       <AboutUs />
       <Contact />
+      <Carrousel />
     </section>
   );
 }

@@ -1,0 +1,140 @@
+@import '../../global/refs.scss';
+
+.carrousel-section-container {
+  position: relative;
+  .container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 140px;
+    margin: auto;
+    padding-bottom: 45px;
+    .titulo{
+      color: $title-purple;
+      font-family: 'Barlow', sans-serif;
+      font-size: 2rem;
+    }
+    .image-title {
+      width: 9%;
+    }
+  }
+  .carrousel-svg-79{
+    display: none;
+    @media(max-width: 1024px) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 40px;;
+      width: 40%;    
+    }
+  }
+  .carrousel-svg-80{
+    display: none;
+    @media(max-width: 1024px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -15px;     
+    }
+  }
+  .carrousel-svg-62{  
+    position: absolute;
+    right: 140px;
+    bottom: -44px;
+    width: 40%;
+    @media(max-width: 1024px) {
+      display: none;
+    }
+  }
+  .carrousel-svg-63{
+    position: absolute;
+    left: 205px;
+    top: 85px;
+    width: 30%;     
+    @media(max-width: 1024px) {
+      display: none;
+    }
+  }
+  .carrousel-container {
+    width:50%;
+    margin: auto;
+    @media(max-width: 1024px) {
+      width: 85%;
+    }
+    img{
+      width: 250px;
+    }
+    li.slick-active button:before {
+      color: #86007D;
+    }
+    .slick-dots li button:before {
+      font-size: 20px;
+    }
+    .carrousel-item-container {
+      display: flex !important;
+      @include flex(center, center, column);
+    }
+    .slick-prev, .slick-next {
+      height: 40px;
+      @media(max-width: 1024px) {
+        display: none !important;
+      }
+    }
+    #carrousel-image {
+      z-index: 1;
+    }
+    .carrousel-text-container {
+      position: relative;
+      width: 55%;
+      min-height: 100px;
+      background-color: white;
+      box-shadow: 0px 0px 6px 1px #0000004E;
+      border-radius: 15px;
+      margin-top: -15px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 20px 20px 5px 20px;
+        text-align: justify;
+        font-family: 'Hind Madurai', sans-serif;
+        word-break: break-word;
+      }
+      @media(max-width: 1024px) {
+        width: 95%;
+      }
+      @media(min-width: 800px) {
+        max-width: 60%;
+      }
+      @media(min-width: 600px) {
+        max-width: 85%;
+      }
+      h3{
+        color: $title-purple;
+      }
+      h3, h5 {
+        margin: 0px 0px 5px 0px;
+        font-family: 'Hind Madurai', sans-serif;
+      }
+    }
+    .carrousel-image-item {
+      max-width: 45%;
+      height: 200px;
+      width: auto;
+      @media(max-width: 1024px) {
+        max-width: 80%;
+      }
+    }
+    .quote-img-rotate {
+      position: absolute;
+      width: 40px;
+      top: 17px;
+      left: 10px;
+      opacity: 0.24;
+    }
+  }
+}
+
+
