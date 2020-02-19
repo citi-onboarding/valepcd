@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="137.70901"
+   height="209.01001"
+   viewBox="0 0 137.709 209.01"
+   version="1.1"
+   id="svg286"
+   sodipodi:docname="Caminho 79.svg"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
+  <metadata
+     id="metadata290">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1016"
+     id="namedview288"
+     showgrid="false"
+     inkscape:zoom="1.8223234"
+     inkscape:cx="106.82816"
+     inkscape:cy="144.88297"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg286" />
+  <defs
+     id="defs282">
+    <style
+       id="style273">.a{opacity:0.849;fill:url(#a);}</style>
+    <linearGradient
+       id="a"
+       x1="96.418419"
+       y1="168.1113"
+       x2="120.05919"
+       y2="13.883454"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.90904394,0.66045908,-0.5231081,0.71999653,4.5389974,-43.331451)">
+      <stop
+         offset="0"
+         stop-color="#86007d"
+         id="stop275" />
+      <stop
+         offset="0.547"
+         stop-color="#e20d20"
+         id="stop277" />
+      <stop
+         offset="1"
+         stop-color="#fd532b"
+         id="stop279" />
+    </linearGradient>
+  </defs>
+  <path
+     class="a"
+     d="M 61.781889,1.3592229 C 100.5631,12.960956 134.82983,91.43456 136.56611,127.9042 138.3024,164.37384 147.54708,216.73973 88.713657,208.27956 70.004466,205.58989 67.262531,177.06803 24.58491,164.24349 A 129.462,129.462 0 0 0 0.25173743,159.95102 C 0.01841083,136.0082 0.14656423,49.072237 0.24973373,16.3333 18.802622,4.566104 39.143451,-5.4138626 61.781889,1.3592229 Z"
+     id="path284"
+     style="opacity:0.84899998;fill:url(#a)"
+     inkscape:connector-curvature="0" />
+</svg>

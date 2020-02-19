@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Navbar, AboutUs, Banner } from './components/index';
+import {
+  Navbar,
+  AboutUs,
+  Carrousel,
+  Banner,
+} from './components/index';
+
 
 function App() {
   return (
@@ -8,6 +14,7 @@ function App() {
       <Navbar />
       <Banner />
       <AboutUs />
+      <Carrousel />
     </section>
   );
 }
