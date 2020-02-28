@@ -7,6 +7,7 @@ import {
   Carrousel,
   Banner,
   Contact,
+  Footer,
 } from './components';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <AboutUs />
       <Carrousel />
       <Contact />
+      <Footer />
     </section>
   );
 }

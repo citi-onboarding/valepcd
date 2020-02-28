@@ -1,0 +1,37 @@
+footer {
+  height: 50px;
+  background-color: #86007D;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+
+  p {
+      padding-right: 50px;
+  }
+
+  span {
+      padding: 2px;
+      svg {
+          width: 15px;
+      }
+  }
+
+  a {
+      color: white;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    font-size: .8rem;
+    span {
+      padding: 2px;
+      svg {
+          width: 13px;
+      }
+    }
+  }
+
+}
