@@ -1,0 +1,83 @@
+@import '../../global/refs.scss';
+
+.accessibility-container {
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  background-color: #E9D0E7;
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(50vh - 61.5px);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  p {
+    display: none;
+  }
+  li {
+    cursor: pointer;
+    height: 40px;
+    img {
+      width: 25px;
+      margin:8px;
+      margin-right: 8px;
+    }
+    &:hover {
+      width: 200px;
+      background-color: #E9D0E7;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 2px 2px 4px #00000029;
+      animation-name: SidebarAnimation;
+      animation-duration: 0.25s;
+      animation-fill-mode: forwards;
+      .text {
+        display: block;
+        overflow: hidden;
+        opacity: 1;
+        font-family: $default-font;
+        color: #86007D;
+        margin: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .side-bar-image-contrast {
+    display: none;
+  }
+
+  @keyframes SidebarAnimation {
+    0% {
+      width:100%;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+}
+
+.contrast-mode {
+  .accessibility-container{
+    background-color: $title-purple;
+    li{
+      &:hover{
+        background-color: $title-purple;
+      }
+      .text {
+        color: $text-purple;
+      }
+    }
+    .side-bar-image {
+      display: none;
+    }
+    .side-bar-image-contrast {
+      display: block;
+    }
+  }
+
+
+
+
+}

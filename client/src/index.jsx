@@ -8,12 +8,14 @@ import {
   Banner,
   Contact,
   Footer,
+  AccessibilityBar,
 } from './components';
 
 function App() {
   return (
     <section className="app">
       <Navbar />
+      <AccessibilityBar />
       <Banner />
       <AboutUs />
       <Carrousel />

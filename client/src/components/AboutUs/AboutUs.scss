@@ -153,3 +153,14 @@
     }
   }
 }
+
+.contrast-mode {
+  #about-us {
+    h2 {
+      color: $nav-bar-menu-text-contrast-color;
+    }
+    p {
+      color: $text-purple;
+    }
+  }
+}

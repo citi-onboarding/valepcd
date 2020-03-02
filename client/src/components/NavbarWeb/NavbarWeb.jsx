@@ -5,6 +5,7 @@ import Facebook from '../../assets/Navbar/facebook-logo.svg';
 import Instagram from '../../assets/Navbar/instagram.svg';
 import SocialNetworkSvg from '../../assets/Navbar/Caminho_98.svg';
 import MenuHamburguer from '../../assets/Navbar/list-menu.png';
+import LogotipoContrast from '../../assets/logotipo-contrast.svg';
 
 function NavbarWeb() {
   function openNavbar() {
@@ -15,6 +16,7 @@ function NavbarWeb() {
     <nav className="navbar-web">
       <div className="navbar-logo">
         <img className="nav-image" src={Logotipo} alt="" tabIndex="1" />
+        <img className="nav-image-contrast" src={LogotipoContrast} alt="" tabIndex="1" />
       </div>
       <ul className="navbar-menu">
         <li tabIndex="2"><a href=" ">Quem somos?</a></li>

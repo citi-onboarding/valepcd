@@ -17,6 +17,14 @@
             padding-left: 25px;
         }
     }
+    .nav-image-contrast{
+        display: none;
+        padding-left: 50px;
+        height: 40px;
+        @media(max-width: 1024px) {
+            padding-left: 25px;
+        }
+    }
     .navbar-social-network-container {
         position: relative;
         @include flex();
@@ -84,5 +92,24 @@
     .social-icon {
         height: 30px;
         width: 30px;
+    }
+}
+
+.contrast-mode {
+    .navbar-web {
+        transition: all 0.2s ease-in-out;
+        background-color: $background-purple;
+        box-shadow: $title-purple 0 0 0 1px 
+    }
+    .nav-image {
+        display: none;
+    }
+    .nav-image-contrast {
+        display: block;
+    }
+    .navbar-menu{
+        li a {
+            color: $nav-bar-menu-text-contrast-color;
+        }
     }
 }
