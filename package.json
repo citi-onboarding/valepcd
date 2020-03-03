@@ -16,6 +16,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "npm i && node index.js"
   }
 }
