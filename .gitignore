@@ -3,3 +3,4 @@ public/
 package-lock.json
 .env
 yarn.lock
+.vscode
