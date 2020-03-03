@@ -8,7 +8,7 @@ keystone.init({
   name: 'Vale PCD',
   static: [path.join(__dirname, './public')],
   'admin path': 'admin',
-  port: process.env.PORT || 3001,
+  port: process.env.PORT || 31070,
   'auto update': true,
   mongo: process.env.MONGO_URI,
   auth: true,
