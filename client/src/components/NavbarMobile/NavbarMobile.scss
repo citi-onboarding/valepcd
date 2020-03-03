@@ -114,3 +114,9 @@
         transform: translateX(100%);
     }
 }
+
+.contrast-mode {
+    .navbar-mobile{
+        background-color: $background-purple;
+    }
+}

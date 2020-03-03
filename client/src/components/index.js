@@ -4,6 +4,7 @@ import Contact from './Contact';
 import Banner from './Banner';
 import Carrousel from './Carrousel';
 import Footer from './Footer';
+import AccessibilityBar from './AccessibilityBar';
 
 export {
   Navbar,
@@ -12,4 +13,5 @@ export {
   Banner,
   Carrousel,
   Footer,
+  AccessibilityBar,
 };

@@ -1,3 +1,5 @@
+@import '../../global/refs.scss';
+
 footer {
   height: 50px;
   background-color: #86007D;
@@ -34,4 +36,10 @@ footer {
     }
   }
 
+}
+
+.contrast-mode {
+  footer {
+    background-color: $background-purple;
+  }
 }

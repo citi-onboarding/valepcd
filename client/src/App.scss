@@ -1,0 +1,12 @@
+@import './global/refs.scss';
+
+body {
+  transition: ease-in;
+  transition-duration: 0.25s;
+}
+
+.contrast-mode {
+  transition: ease-in;
+  transition-duration: 0.25s;
+  background-color: $background-purple;
+}

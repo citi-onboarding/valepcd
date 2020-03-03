@@ -5,6 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Carrousel.scss';
 import NexvArrowSvg from '../../assets/Carrousel/left-arrow-1.svg';
 import PrevArrowSvg from '../../assets/Carrousel/left-arrow.svg';
+import NexvArrowSvgContrast from '../../assets/left-arrow-1-contrast.svg';
+import PrevArrowSvgContrast from '../../assets/left-arrow-contrast.svg';
 import ImagemCarrousel from '../../assets/p1.png.svg';
 import QuotesSvg from '../../assets/quotes.svg';
 import Caminho79Svg from '../../assets/Caminho79.svg';
@@ -32,6 +34,17 @@ function Carrousel() {
     nextArrow: <img id="carrousel-image" src={NexvArrowSvg} alt="" />,
     prevArrow: <img id="carrousel-image" src={PrevArrowSvg} alt="" />,
   };
+
+  const settingsContrast = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <img id="carrousel-image-contrast" src={NexvArrowSvgContrast} alt="" />,
+    prevArrow: <img id="carrousel-image-contrast" src={PrevArrowSvgContrast} alt="" />,
+  };
+
   console.log('aqui');
   res && console.log(res[0]);
   return (
@@ -50,6 +63,23 @@ function Carrousel() {
               <img className="carrousel-image-item" src={slid.image[0].url} alt="" />
               <div className="carrousel-text-container">
                 <img className="quote-img-rotate" src={QuotesSvg} alt="" />
+                <p>
+                  {slid.text}
+                </p>
+                <h3>{slid.name}</h3>
+                <h5>{slid.about}</h5>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="carrousel-container-contrast">
+        <Slider {...settingsContrast}>
+          { res && res[0].image && res[0].image[0].url && res.map((slid) => (
+            <div className="carrousel-item-container-contrast">
+              <img className="carrousel-image-item-contrast" src={slid.image[0].url} alt="" />
+              <div className="carrousel-text-container-contrast">
+                <img className="quote-img-rotate-contrast" src={QuotesSvg} alt="" />
                 <p>
                   {slid.text}
                 </p>

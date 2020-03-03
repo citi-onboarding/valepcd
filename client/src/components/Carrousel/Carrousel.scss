@@ -55,6 +55,9 @@
       display: none;
     }
   }
+  .carrousel-container-contrast {
+    display: none;
+  }
   .carrousel-container {
     width:50%;
     margin: auto;
@@ -137,4 +140,97 @@
   }
 }
 
-
+.contrast-mode {
+  .carrousel-section-container {
+    .carrousel-container-contrast {
+      display: block;
+    }
+    .carrousel-container {
+      display: none;
+    }
+    .carrousel-container-contrast {
+      width:50%;
+      margin: auto;
+      #carrousel-image-contrast {
+        z-index: 1;
+      }
+      @media(max-width: 1024px) {
+        width: 85%;
+      }
+      img{
+        width: 250px;
+      }
+      li.slick-active button:before {
+        color: #86007D;
+      }
+      .slick-dots li button:before {
+        font-size: 20px;
+      }
+      .carrousel-item-container-contrast {
+        display: flex !important;
+        @include flex(center, center, column);
+      }
+      .slick-prev, .slick-next {
+        height: 40px;
+        @media(max-width: 1024px) {
+          display: none !important;
+        }
+      }
+      .carrousel-text-container-contrast {
+        position: relative;
+        width: 55%;
+        min-height: 100px;
+        background-color:$carrousel-contrast;
+        box-shadow: 0px 0px 6px 1px #0000004E;
+        border-radius: 15px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: $text-purple;
+          margin: 20px 20px 5px 20px;
+          text-align: justify;
+          font-family: 'Hind Madurai', sans-serif;
+          word-break: break-word;
+        }
+        @media(max-width: 1024px) {
+          width: 95%;
+        }
+        @media(min-width: 800px) {
+          max-width: 60%;
+        }
+        @media(min-width: 600px) {
+          max-width: 85%;
+        }
+        h3{
+          color: $cattousel-name;
+        }
+        h5 {
+          color: $text-purple;
+        }
+        h3, h5 {
+          margin: 0px 0px 5px 0px;
+          font-family: 'Hind Madurai', sans-serif;
+        }
+      }
+      .carrousel-image-item-contrast {
+        max-width: 45%;
+        height: 200px;
+        width: auto;
+        @media(max-width: 1024px) {
+          max-width: 80%;
+        }
+      }
+      .quote-img-rotate-contrast {
+        position: absolute;
+        width: 40px;
+        top: 17px;
+        left: 10px;
+        opacity: 0.24;
+      }
+    }
+  }
+}
