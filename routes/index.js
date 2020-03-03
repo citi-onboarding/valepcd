@@ -9,7 +9,7 @@ const Testimies = keystone.list('Relatos').model;
 module.exports = (app) => {
   app.use(cors());
 
-  app.get('/', (req, res) => {
+  app.get('/static', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
   });
 
