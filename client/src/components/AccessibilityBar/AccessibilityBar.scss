@@ -23,23 +23,25 @@
       margin:8px;
       margin-right: 8px;
     }
-    &:hover {
-      width: 200px;
-      background-color: #E9D0E7;
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
-      box-shadow: 2px 2px 4px #00000029;
-      animation-name: SidebarAnimation;
-      animation-duration: 0.25s;
-      animation-fill-mode: forwards;
-      .text {
-        display: block;
-        overflow: hidden;
-        opacity: 1;
-        font-family: $default-font;
-        color: #86007D;
-        margin: auto;
-        white-space: nowrap;
+    @media(min-width: 1024px) {
+      &:hover {
+        width: 200px;
+        background-color: #E9D0E7;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: 2px 2px 4px #00000029;
+        animation-name: SidebarAnimation;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+        .text {
+          display: block;
+          overflow: hidden;
+          opacity: 1;
+          font-family: $default-font;
+          color: #86007D;
+          margin: auto;
+          white-space: nowrap;
+        }
       }
     }
   }
