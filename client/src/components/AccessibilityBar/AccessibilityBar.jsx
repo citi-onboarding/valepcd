@@ -58,7 +58,7 @@ function AccessibilityBar() {
       <li className="buttons" onClick={ContrastChange}>
         <img className="side-bar-image" src={ContrastSvg} alt="Este é o botão de auto contraste" />
         <img className="side-bar-image-contrast" src={ContrastSvgContrat} alt="Este é o botão de auto contraste" />
-        <p className="text">Mudar contrarte</p>
+        <p className="text">Mudar contraste</p>
       </li>
       <li className="buttons" onClick={AumentarFonte}>
         <img className="side-bar-image" src={UpperCaseSvg} alt="Este é o botão para aumentar a fonte" />
