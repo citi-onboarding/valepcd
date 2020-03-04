@@ -19,9 +19,9 @@ function NavbarWeb() {
         <img className="nav-image-contrast" src={LogotipoContrast} alt="" tabIndex="1" />
       </div>
       <ul className="navbar-menu">
-        <li tabIndex="2"><a href=" ">Quem somos?</a></li>
-        <li tabIndex="3"><a href=" ">Relatos</a></li>
-        <li tabIndex="4"><a href=" ">Contatos</a></li>
+        <li tabIndex="2"><a href="#vale">Quem somos?</a></li>
+        <li tabIndex="3"><a href="#relatos">Relatos</a></li>
+        <li tabIndex="4"><a href="#fale-conosco">Contatos</a></li>
       </ul>
       <div className="navbar-social-network-container">
         <img className="svg-image" src={SocialNetworkSvg} alt="" />

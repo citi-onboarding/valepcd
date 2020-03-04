@@ -15,7 +15,7 @@ function AboutUs() {
   const { title, text } = res || {};
 
   return (
-    <section>
+    <section id="vale">
       <Title title="O que é o Vale" />
       <div id="about-us">
         <div id="about-us-image">

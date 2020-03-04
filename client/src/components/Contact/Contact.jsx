@@ -7,7 +7,7 @@ import './Contact.scss';
 function Contact() {
   const [state, setState] = useState(false);
   return (
-    <section className="contact">
+    <section id="fale-conosco" className="contact">
       <Title title="Fale conosco!" />
       <div className="contact-container">
         <Info onClickArrow={() => setState(!state)} className={state} />
