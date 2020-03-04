@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const baseUrl = 'http://localhost:3001';
+const baseUrl2 = 'https://vale-pcd.herokuapp.com';
 
 const axiosGet = async (relativeUrl = '/', setState = () => { }) => {
   try {
@@ -14,7 +15,7 @@ const axiosGet = async (relativeUrl = '/', setState = () => { }) => {
 
 const axiosPost = async (relativeUrl = '/', body={ }, callback = () => { }) => {
   try {
-    const res = await axios.post(`${baseUrl}${relativeUrl}`, body);
+    const res = await axios.post(`${baseUrl2}${relativeUrl}`, body);
     callback(res);
   } catch (err) {
     console.log(err);
