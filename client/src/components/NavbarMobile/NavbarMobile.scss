@@ -73,14 +73,6 @@
             }
         }
     }
-    .navbar-mobile-footer {
-        width: 100%;
-        height: 105px;
-
-        @media(min-height: 1000px) {
-            height: 200px;
-        }
-    }
 }
 
 .closeNavbar {

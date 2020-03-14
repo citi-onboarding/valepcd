@@ -53,9 +53,6 @@ function NavbarMobile() {
           </div>
         </li>
       </ul>
-      <footer className="navbar-mobile-footer">
-        <img src={CurveSvg} alt="" />
-      </footer>
     </nav>
   );
 }
