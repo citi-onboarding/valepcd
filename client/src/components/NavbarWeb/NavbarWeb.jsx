@@ -16,20 +16,29 @@ function NavbarWeb() {
     event.preventDefault();
     const element = event.target;
     const id = element.getAttribute('href');
-    const to = document.querySelector(id).offsetTop;
-
-    window.scroll({
-      top: to,
-      behavior: "smooth",
-    })
+    if(id == null){
+      const to = document.querySelector(id);
+      window.scroll({
+        top: to,
+        behavior: "smooth",
+      })
+    }else{
+      const to = document.querySelector(id).offsetTop;
+      window.scroll({
+        top: to,
+        behavior: "smooth",
+      })
+    }
   }
   
   return (
     <nav className="navbar-web">
-      <div className="navbar-logo">
-        <img className="nav-image" src={Logotipo} alt="" tabIndex="1" />
-        <img className="nav-image-contrast" src={LogotipoContrast} alt="" tabIndex="1" />
-      </div>
+      <a href="#banner-id" onClick={smoothScroll}>
+        <div className="navbar-logo">
+            <img className="nav-image" src={Logotipo} alt="" tabIndex="1" />
+            <img className="nav-image-contrast" src={LogotipoContrast} alt="" tabIndex="1" />
+        </div>
+      </a>
       <ul className="navbar-menu">
         <li tabIndex="2"><a href="#vale" onClick={smoothScroll}>Quem somos?</a></li>
         <li tabIndex="3"><a href="#relatos" onClick={smoothScroll}>Relatos</a></li>

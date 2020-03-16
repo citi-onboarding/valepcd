@@ -1,6 +1,6 @@
 @import '../../global/refs.scss';
 
-#banner {
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 1024px) {
-  #banner {
+  .banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 600px) {
-  #banner {
+  .banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@
 }
 
 .contrast-mode {
-  #banner{
+  .banner{
     .banner-content {
       h1 {
         color: $text-purple;

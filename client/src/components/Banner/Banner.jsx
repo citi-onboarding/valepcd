@@ -4,7 +4,7 @@ import { ReactComponent as BannerSVG } from '../../assets/banner.svg';
 
 function Banner() {
   return (
-    <section id="banner">
+    <section id ="banner-id" className="banner">
       <div className="banner-content">
         <h1>Vale PCD</h1>
         <p>Venha nos ajudar a transformar o</p>
