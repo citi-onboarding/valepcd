@@ -76,9 +76,12 @@
     .navbar-mobile-footer {
         width: 100%;
         height: 105px;
-
+        background-color: transparent;
         @media(min-height: 1000px) {
             height: 200px;
+        }
+        img {
+            width: 100%;
         }
     }
 }

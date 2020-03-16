@@ -45,8 +45,6 @@ function Carrousel() {
     prevArrow: <img id="carrousel-image-contrast" src={PrevArrowSvgContrast} alt="" />,
   };
 
-  console.log('aqui');
-  res && console.log(res[0]);
   return (
     <section id="relatos" className="carrousel-section-container">
       <div className="container-title">

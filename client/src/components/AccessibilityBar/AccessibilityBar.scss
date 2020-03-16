@@ -12,12 +12,16 @@
   top: calc(50vh - 61.5px);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  @media(max-width: 1024px) {
+    top: 20vh;
+  }
   p {
     display: none;
   }
   li {
     cursor: pointer;
     height: 40px;
+    border-radius: 20px;
     img {
       width: 25px;
       margin:8px;
